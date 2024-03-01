@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --theme-main-color: #ff5400 !important;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.df {
+  display: flex;
+}
+
+/* Header */
+.nav {
+  margin: 50px 0;
+  justify-content: space-between;
+}
+.logo {
+  align-items: center;
+}
+.hero {
+  margin-left: 1rem;
+}
+.travel {
+  margin-left: 0.5rem;
+  color: var(--theme-main-color);
+}
+.hero,
+.travel {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* Nav */
+.nav li {
+  list-style: none;
+  margin-right: 45px;
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+.selected {
+  color: var(--theme-main-color) !important;
+  font-weight: 700;
+}
+.nav li a {
+  text-decoration: none;
+  color: #424247;
+}
+/* .nav li:selected {
+  background-color: #011FFD!important;
+  } */
