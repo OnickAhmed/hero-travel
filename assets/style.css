@@ -55,3 +55,46 @@
 /* .nav li:selected {
   background-color: #011FFD!important;
   } */
+.banner{
+  background-image:
+    linear-gradient(to bottom, rgba(19, 19, 24, 0.75), rgba(19, 19, 24, 0)),
+    url(Images/Group\ 13\ \(1\)\ \(1\).png);
+  /* background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png); */
+  height: 500px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.banner-content{
+  width: 800px;
+}
+.banner-title{
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 800;
+  padding-top: 100px;
+}
+.banner-desc{
+  color: #fff;
+}
+.banner-form{
+  background-color: rgba(255, 255, 255, 0.30);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+.banner-form-field{
+  padding: 15px;
+  color: #131318;
+  width: 175px;
+  border-radius: 8px;
+  border: none;
+}
+.btn-primary{
+  background-color: var(--theme-main-color);
+  padding: 15px 35px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 175px;
+}

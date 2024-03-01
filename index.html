@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Travel</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/825298e62e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header container">
+      <!-- NAV -->
       <nav class="nav df">
         <div class="logo df">
           <img src="assets/images/Group 40071 (2).png" alt="" />
@@ -23,6 +28,42 @@
           </ul>
         </div>
       </nav>
+      <!-- BANNER -->
+      <div class="banner df container">
+        <div class="banner-content">
+          <h1 class="banner-title">Explore Your Travel</h1>
+          <p class="banner-desc">
+            Let's Explore your travel with us any destination you want, and day
+            you want to travel. Find our exciting offers...
+          </p>
+          <div class="trip-plan">
+            <form class="banner-form">
+              <input
+                class="banner-form-field"
+                type="text"
+                id="where"
+                name="where"
+                placeholder="Where go"
+              />
+              <select class="banner-form-field" id="when" name="when">
+                <option value="When">When</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <select class="banner-form-field" id="type" name="type">
+                <option value="Type">Type</option>
+                <option value="bus">Bus</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+              </select>
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-magnifying-glass"></i> Find Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main"></main>
     <div class="footer footer"></div>
