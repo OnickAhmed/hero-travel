@@ -121,6 +121,21 @@
   width: 175px;
 }
 
+/* Popular Tours */
+.popular-info{
+  margin-right: 55px;
+}
+.popular-info ul{
+  margin: 2rem 0;
+  padding-left: 20px;
+}
+.popular-info li{
+  margin: 1rem 0;
+}
+.btn-read-more{
+  font-size: 1.25rem;
+  font-weight: 800;
+}
 
 /* Destination */
 .destination-content{
