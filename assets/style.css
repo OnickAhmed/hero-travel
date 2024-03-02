@@ -65,36 +65,85 @@
   justify-content: center;
   text-align: center;
 }
-.banner-content{
+.banner-content {
   width: 800px;
 }
-.banner-title{
+.trip-desc {
+  width: 675px;
+  margin: 0 auto;
+}
+.banner-title {
   font-size: 4rem;
   color: #fff;
   font-weight: 800;
   padding-top: 100px;
+  margin: 0;
 }
-.banner-desc{
+.banner-desc {
   color: #fff;
+  margin-top: 24px;
 }
-.banner-form{
-  background-color: rgba(255, 255, 255, 0.30);
+.banner-form {
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   border: none;
   border-radius: 8px;
+  margin-top: 70px;
+  gap: 1.5rem;
 }
-.banner-form-field{
+.banner-form-field {
   padding: 15px;
   color: #131318;
   width: 175px;
   border-radius: 8px;
   border: none;
 }
-.btn-primary{
+.btn-primary {
   background-color: var(--theme-main-color);
   padding: 15px 35px;
   color: #fff;
   border: none;
   border-radius: 8px;
   width: 175px;
+}
+.section{
+  height: 500px;
+}
+/* Media Queries */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 335px;
+    margin: 0 auto;
+  }
+  .df {
+    flex-direction: column;
+  }
+  .logo{
+    flex-direction: row;
+  }  
+  .hero,
+  .travel {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .banner-title{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .banner-content {
+    width: 335px;
+  }
+  .trip-desc {
+    width: 335px;
+    margin: 30px auto;
+  }
+  .banner-form {
+    padding: .75rem;
+    margin: 1rem auto;
+    width: 285px;
+    align-items: center;
+  }
+  .banner-form-field, .btn-find {
+    width: 255px;
+  }
 }
