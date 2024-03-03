@@ -24,10 +24,11 @@
   font-size: 2.5rem;
   color: #131318;
   font-weight: 800;
-  margin: 24px auto;
+  margin: 0 auto 24px auto;
 }
 .section-sub{
   color: rgba(19, 19, 24, 0.70);
+  margin: 1.5rem auto;
 }
 
 /* Header */
@@ -122,14 +123,14 @@
 }
 
 /* Popular Tours */
-.popular-info{
+.popular-info, .choose-info{
   margin-right: 55px;
 }
-.popular-info ul{
+.popular-info ul, .choose-info ul{
   margin: 2rem 0;
   padding-left: 20px;
 }
-.popular-info li{
+.popular-info li, .choose-info li{
   margin: 1rem 0;
 }
 .btn-read-more{
@@ -147,6 +148,40 @@
   margin: 4px;
 }
 
+/* Why Us */
+.why-us-heading{
+  width: 645px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Card */
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 575px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 1.5rem;
+}
+.card img{
+  width: 64px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.card1{
+  background-color: rgba(251, 181, 99, 0.09);
+}
+.card2{
+  background-color: rgba(41, 206, 246, 0.09);
+}
+.card3{
+  background-color: rgba(233, 68, 68, 0.09);
+}
+
 /* Media Queries */
 @media screen and (max-width: 576px) {
   .container {
@@ -155,6 +190,9 @@
   }
   .df {
     flex-direction: column;
+  }
+  .menu{
+    display: none;
   }
   .section-title{
     font-size: 1.25rem;
@@ -192,10 +230,43 @@
     width: 255px;
   }
   /* Destination */
-  .destination-content{
-    width: 310px;
+  .destination-content, .why-us-heading, .card{
+    width: 300px;
+  }
+  .card-container{
+    margin: 0 auto;
+  }
+  .card{
+    margin: 1rem 0 ;
+    padding: 1rem;
   }
   .destination-images img{
+    width: 100%;
+  }
+  .popular-img img, .choose-img img{
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .menu{
+    display: none;
+  }
+  .destination-content, .why-us-heading, .card{
+    width: 300px;
+  }
+  .card-container{
+    margin: 0 auto;
+  }
+  .card{
+    margin: 1rem 0 ;
+    padding: 1rem;
+  }
+  .destination-images img, .popular-img img{
     width: 100%;
   }
 }
