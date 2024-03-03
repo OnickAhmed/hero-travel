@@ -182,6 +182,54 @@
   background-color: rgba(233, 68, 68, 0.09);
 }
 
+.card-newsletter{
+  border: 1px solid #FF5400;
+  margin-top: 0;
+}
+.card-newsletter-title{
+  margin: 10px 0;
+}
+.card input{
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(19,19,24, 0.05);
+  width: 90%;
+}
+.card-newsletter-sub{
+  color: #5a5a5d;
+}
+.card hr, .footer hr{
+  margin: 1.5rem 0;
+  color: rgba(19,19,24, 0.1);
+}
+
+/* Newletter */
+/* .btn-newsletter{
+  margin
+} */
+/* Footer */
+.footer{
+  text-align: center;
+  height: 500px;
+}
+.footer > .logo{
+  margin-top: 110px;
+  justify-content: center;
+}
+.footer > .card-newsletter-sub{
+  margin: 1rem auto 2rem auto;
+}
+.footer-icons{
+  margin: 2rem auto 100px auto;
+}
+.footer hr{
+  margin: 50px auto;
+}
+.fa-brands{
+  margin: 0 1rem;
+}
 /* Media Queries */
 @media screen and (max-width: 576px) {
   .container {
