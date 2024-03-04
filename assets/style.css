@@ -17,17 +17,17 @@
 .df {
   display: flex;
 }
-.section{
+.section {
   margin-top: 100px;
 }
-.section-title{
+.section-title {
   font-size: 2.5rem;
   color: #131318;
   font-weight: 800;
   margin: 0 auto 24px auto;
 }
-.section-sub{
-  color: rgba(19, 19, 24, 0.70);
+.section-sub {
+  color: rgba(19, 19, 24, 0.7);
   margin: 1.5rem auto;
 }
 
@@ -35,6 +35,9 @@
 .nav {
   margin: 50px 0;
   justify-content: space-between;
+}
+.bars {
+  display: none;
 }
 .logo {
   align-items: center;
@@ -70,7 +73,7 @@
 /* .nav li:selected {
   background-color: #011FFD!important;
   } */
-.banner{
+.banner {
   background-image:
     linear-gradient(to bottom, rgba(19, 19, 24, 0.75), rgba(19, 19, 24, 0)),
     url(Images/Group\ 13\ \(1\)\ \(1\).png);
@@ -123,33 +126,36 @@
 }
 
 /* Popular Tours */
-.popular-info, .choose-info{
+.popular-info,
+.perfect-info {
   margin-right: 55px;
 }
-.popular-info ul, .choose-info ul{
+.popular-info ul,
+.perfect-info ul {
   margin: 2rem 0;
   padding-left: 20px;
 }
-.popular-info li, .choose-info li{
+.popular-info li,
+.perfect-info li {
   margin: 1rem 0;
 }
-.btn-read-more{
+.btn-read-more {
   font-size: 1.25rem;
   font-weight: 800;
 }
 
 /* Destination */
-.destination-content{
+.destination-content {
   width: 643px;
   margin: 0 auto;
   text-align: center;
 }
-.destination-images img{
+.destination-images img {
   margin: 4px;
 }
 
 /* Why Us */
-.why-us-heading{
+.why-us-heading {
   width: 645px;
   margin: 0 auto;
   text-align: center;
@@ -158,76 +164,78 @@
 .card {
   /* Add shadows to create the "card" effect */
   width: 575px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   padding: 2rem;
   border: none;
   border-radius: 1rem;
   margin: 1.5rem;
 }
-.card img{
+.card img {
   width: 64px;
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
-.card1{
+.card1 {
   background-color: rgba(251, 181, 99, 0.09);
 }
-.card2{
+.card2 {
   background-color: rgba(41, 206, 246, 0.09);
 }
-.card3{
+.card3 {
   background-color: rgba(233, 68, 68, 0.09);
+  margin: 1.5rem auto;
 }
 
-.card-newsletter{
-  border: 1px solid #FF5400;
+.card-newsletter {
+  border: 1px solid #ff5400;
   margin-top: 0;
 }
-.card-newsletter-title{
+.card-newsletter-title {
   margin: 10px 0;
 }
-.card input{
+.card input {
   padding: 1.25rem;
   margin-bottom: 1.25rem;
   border: none;
   border-radius: 8px;
-  background-color: rgba(19,19,24, 0.05);
+  background-color: rgba(19, 19, 24, 0.05);
   width: 90%;
 }
-.card-newsletter-sub{
+.card-newsletter-sub {
   color: #5a5a5d;
 }
-.card hr, .footer hr{
+.card hr,
+.footer hr {
   margin: 1.5rem 0;
-  color: rgba(19,19,24, 0.1);
+  color: rgba(19, 19, 24, 0.1);
 }
 
-/* Newletter */
+/* Newsletter */
 /* .btn-newsletter{
   margin
 } */
 /* Footer */
-.footer{
+.footer {
   text-align: center;
   height: 500px;
 }
-.footer > .logo{
+.footer > .logo {
   margin-top: 110px;
   justify-content: center;
 }
-.footer > .card-newsletter-sub{
+.footer > .card-newsletter-sub {
   margin: 1rem auto 2rem auto;
 }
-.footer-icons{
+.footer-icons {
   margin: 2rem auto 100px auto;
 }
-.footer hr{
+.footer hr {
   margin: 50px auto;
 }
-.fa-brands{
+.fa-brands {
   margin: 0 1rem;
 }
 /* Media Queries */
@@ -236,28 +244,39 @@
     max-width: 335px;
     margin: 0 auto;
   }
+  .section {
+    margin-top: 100px;
+  }
   .df {
     flex-direction: column;
   }
-  .menu{
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-item {
     display: none;
   }
-  .section-title{
+  .bars {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .section-title {
     font-size: 1.25rem;
   }
-  .section-sub{
-    font-size: .85rem;
+  .section-sub {
+    font-size: 0.85rem;
   }
   /* Header */
-  .logo{
+  .logo {
     flex-direction: row;
-  }  
+  }
   .hero,
   .travel {
     font-size: 1.25rem;
     font-weight: 800;
   }
-  .banner-title{
+  .banner-title {
     font-size: 1.5rem;
     padding: 0;
   }
@@ -269,52 +288,119 @@
     margin: 30px auto;
   }
   .banner-form {
-    padding: .75rem;
+    padding: 0.75rem;
     margin: 1rem auto;
     width: 285px;
     align-items: center;
   }
-  .banner-form-field, .btn-find {
+  .banner-form-field,
+  .btn-find {
     width: 255px;
   }
   /* Destination */
-  .destination-content, .why-us-heading, .card{
+  .destination-content,
+  .why-us-heading,
+  .card {
     width: 300px;
   }
-  .card-container{
+  .card-container {
     margin: 0 auto;
   }
-  .card{
-    margin: 1rem 0 ;
+  .card {
+    margin: 1rem 0;
     padding: 1rem;
   }
-  .destination-images img{
+  .destination-images img {
     width: 100%;
   }
-  .popular-img img, .choose-img img{
+  .popular-img img,
+  .perfect-img img {
     width: 100%;
     margin: 1.5rem auto;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .container {
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
   }
-  .menu{
+  .section {
+    margin-top: 100px;
+  }
+  .df {
+    flex-direction: row;
+  }
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-item {
     display: none;
   }
-  .destination-content, .why-us-heading, .card{
-    width: 300px;
+  .bars {
+    display: block;
+    font-size: 1.5rem;
   }
-  .card-container{
+  .banner-title {
+    padding-top: 0px;
+  }
+  .trip-desc {
+    width: 650px;
+    margin: 100px auto;
+  }
+  .banner-form {
+    padding: 0.75rem;
+    margin: 1rem auto;
+    width: 700px;
+    align-items: center;
+  }
+  .destination-content,
+  .why-us-heading {
+    width: 500px;
+  }
+  .card-container {
     margin: 0 auto;
   }
-  .card{
-    margin: 1rem 0 ;
+  .card {
+    width: 300px;
+    margin: 1rem auto;
     padding: 1rem;
   }
-  .destination-images img, .popular-img img{
+  .destination-images img,
+  .popular-img img {
     width: 100%;
+  }
+  .popular-content,
+  .perfect-content {
+    flex-direction: column !important;
+  }
+  .popular-info,
+  .perfect-info {
+    margin: 55px;
+  }
+  .popular-info ul,
+  .perfect-info ul {
+    margin: 2rem 0;
+    padding-left: 20px;
+  }
+  .popular-info li,
+  .perfect-info li {
+    margin: 1rem 0;
+  }
+  .popular-img img,
+  .perfect-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .destination-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card-newsletter {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
   }
 }
